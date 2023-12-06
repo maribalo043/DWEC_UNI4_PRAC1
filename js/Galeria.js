@@ -37,20 +37,12 @@ export default class Galeria {
     return this._posicion;
   }
   set posicion(nuevaPosicion) {
-    if (typeof nuevaPosicion === 'number') {
-      this._posicion = nuevaPosicion;
-    } else {
-      console.error('La posición debe ser un número.');
-    }
+    this._posicion = nuevaPosicion;
   }
   get lista() {
     return this._lista;
   }
   set lista(nuevaLista) {
-    if (Array.isArray(nuevaLista)) {
-      this._lista = nuevaLista;
-    } else {
-      console.error('La lista debe ser un array.');
-    }
+    this._lista = nuevaLista;
   }
 }
