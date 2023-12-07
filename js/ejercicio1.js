@@ -2,7 +2,7 @@ import Galeria from './Galeria.js';
 
 var galeria = new Galeria(7);
 
-window.onload = cargarPagina;
+window.addEventListener('load',cargarPagina);
 document.addEventListener('click',cambioImagen);
 document.addEventListener('keydown', teclaPresionada);
 
